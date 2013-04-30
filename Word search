@@ -1,0 +1,17 @@
+creat a new string object getting the user input from the keyboard using the imported scanner,
+this will be the next word we will be looking for.
+Use dot notation toLowerCase() and charAt() to grab the first letter of the entered word by the user at index 0.
+Then the program will look at the text file and find the matching character to the first letter of the 
+entered word in a do-while loop,since we want it too at least run once, then using a simple if-else statement ,
+if those characters match(==)then we will compare the next letters of the word, else move on to the next char
+in the text file.
+
+If after the do-while loop's execution there was no matching word, system.out.println("word not found!");
+else rewrite the scanner object to ask for the next word from the user.
+In the entire program, if the string entered by the user .equals(quit), the user will be asked if they want to end 
+their session(y/n)? then:
+boolean playAgain = false;
+if(char input = 'y' ){  playAgain = true; }
+else { playAgain}
+
+the outer do-while loop will only run if the boolean playAgain is false; so do{...} while (playAgain)
